@@ -18,7 +18,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build Docker image
-      run: docker build montaser09/abdo -t  .
+      run: docker build -t montaser09/abdo .
 
     - name: Push Docker image
       run: docker push montaser09/abdo
